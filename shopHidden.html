@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+
+<head>
+  <style media="screen">
+    body {
+      height: 100%;
+      width: 100%;
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background: #FFF;
+      margin: auto;
+      margin-top: 50px;
+      border: 1px dashed black;
+      width: 450px;
+      height: 100px
+    }
+  </style>
+</head>
+
+<body>
+  <form method="post" action="/fieldshop?prod=1">
+    Product: Bixel 2 <br/> Price: 899.00 <br/> Quantity: <input type="text" name="quantity"> (Maximum quantity is 50)
+    <br/>
+    <input type="hidden" name="price" value="899">
+    <input type="submit" value="Buy">
+  </form>
+</body>
+
+</html>
