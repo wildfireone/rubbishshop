@@ -1,0 +1,19 @@
+{
+  "name": "rubbishshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testshop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildfireone/rubbishshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wildfireone/rubbishshop/issues"
+  },
+  "homepage": "https://github.com/wildfireone/rubbishshop#readme"
+}
