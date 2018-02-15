@@ -3,7 +3,7 @@
  * @Date:   13-Feb-182018
  * @Filename: testshop.js
  * @Last modified by:   john
- * @Last modified time: 14-Feb-182018
+ * @Last modified time: 15-Feb-182018
  */
 
 
@@ -12,7 +12,7 @@ const http = require('http'),
   fs = require('fs');
   var querystring = require('querystring');
   var url = require('url');
-const port = 4000
+const port = 80
 
 var products =["Pear myPhone", "bixel2","2+3 haxxor phone"];
 
