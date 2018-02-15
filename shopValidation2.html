@@ -1,0 +1,50 @@
+<!doctype>
+<html>
+
+<head>
+  <style media="screen">
+    body {
+      height: 100%;
+      width: 100%;
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background: #FFF;
+      margin: auto;
+      margin-top: 50px;
+      border: 1px dashed black;
+      width: 450px;
+      height: 100px
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function validateForm(theForm) {
+      quantity = theForm.elements.namedItem("quantity").value;
+      var isInteger = /^\d+$/;
+      var valid = isInteger.test(quantity) &&
+        quantity > 0 && quantity <= 50;
+      if (!valid)
+        alert('Please enter a valid quantity');
+      return valid;
+    }
+    </script>
+  <form method="post" action="validationshop?prod=1" onsubmit="return validateForm(this)">
+    Product: Bixel 2 <br/>
+    Price: 899.00 <br/>
+    Quantity: <input type="text" name="quantity" maxlength="2"> (Maximum quantity is 50)
+    <br/>
+    <input type="hidden" name="price" value="899">
+    <input type="submit" value="Buy">
+  </form>
+</body>
+
+
+  </html>
