@@ -12,7 +12,7 @@ const http = require('http'),
   fs = require('fs');
   var querystring = require('querystring');
   var url = require('url');
-  const port =80
+  const port =8080
 
 var products =["Pear myPhone", "bixel2","2+3 haxxor phone"];
 
